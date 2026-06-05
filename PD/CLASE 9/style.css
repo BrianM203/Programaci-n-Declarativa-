@@ -1,0 +1,64 @@
+body {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background-color: #f5f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #111827;
+}
+
+/* contenedor del centro (tu div principal) */
+body > div {
+    text-align: center;
+}
+
+/* select más bonito */
+select {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    background-color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 12px 0;
+    transition: all 0.2s ease;
+}
+
+select:focus {
+    outline: none;
+    border-color: #9ca3af;
+    box-shadow: 0 0 0 3px rgba(156, 163, 175, 0.2);
+}
+
+/* card del clima */
+#climaCard {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 14px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    min-width: 260px;
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#climaCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* temperatura principal (la estás generando en JS) */
+.text-4xl {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #111827;
+}
+
+/* descripción del clima */
+.text-sm.text-gray-600 {
+    font-size: 0.95rem;
+    text-transform: capitalize;
+    color: #374151;
+}

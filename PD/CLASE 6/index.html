@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesamiento de Calificaciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="contenedor">
+        <h1>Calificaciones</h1>
+        <button id="btnProcesar">Mostrar aprobados</button>
+
+        <section class="resultados">
+            <h2 id="tituloLista">Todos los alumnos</h2>
+            <ul id="listaAprobados" aria-live="polite"></ul>
+
+            <p id="mensajeVacio" hidden>
+                No hay alumnos aprobados
+            </p>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

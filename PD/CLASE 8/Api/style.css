@@ -1,0 +1,72 @@
+:root {
+  --color-primario: #3498db;
+  --color-secundario: #7645ff;
+  --color-fondo: #ecf0f1;
+  --color-texto: #2c3e50;
+  --fuente-principal: 'Arial', sans-serif;
+}
+
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: var(--fuente-principal);
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Botón */
+#btnCargar {
+  background: linear-gradient(135deg, var(--color-secundario), var(--color-primario));
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+  width: fit-content;
+}
+
+#btnCargar:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+/* Grid */
+.grid-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Tarjetas */
+.tarjeta {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.tarjeta h3 {
+  margin-top: 0;
+  color: var(--color-primario);
+}

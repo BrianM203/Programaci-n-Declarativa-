@@ -1,0 +1,15 @@
+:root{
+    --fondo: #ffffff;
+    --fondo2: #4b2ef394;
+    --texto1: #0000;    
+
+};
+
+.body{
+    background: var(--fondo);
+
+}
+
+.contenedor{
+    background: var(--fondo2);
+}
